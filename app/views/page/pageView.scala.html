@@ -1,0 +1,92 @@
+@(p: repository.PageContent)
+
+<div id="above_background">
+<!-- 
+	<div id="rolle_oben">
+		<div id="rolle_oben_background"></div>
+		<table border="0" width="100%" cellspacing=0 cellpadding=0>
+			<tr>
+				<td>
+					<div id="rolle_oben_links_abstand"></div>
+				</td>
+				<td>
+					<div id="rolle_oben_links"></div>
+				</td>
+				<td width="100%">
+					<div id="rolle_oben_mitte"></div>
+				</td>
+				<td>
+					<div id="rolle_oben_rechts"></div>
+				</td>
+				<td>
+					<div id="rolle_oben_rechts_abstand"></div>
+				</td>
+			</tr>
+		</table>
+	</div>
+ -->
+ 
+	<table border="0" width="100%" height="100%" cellspacing=0
+		cellpadding=0>
+		<tr height="100%">
+			<td width="280px"></td>
+			<td height="100%" valign="top">
+				<table border="0" width="100%" height="100%" cellspacing=0
+					cellpadding=0 id="papier">
+					<tr height="100%">
+						<td id="papier_td_rand">
+							<div id="papier_links"></div>
+						</td>
+						<td width="100%" height="100%" valign="top">
+						
+						<div id="edit-button" class="button"> 
+						    <div class="button-top"></div>
+						    <div class="button-middle"></div>
+						    <div class="button-image"></div>
+							<div class="beschriftung text1">schreiben</div> 
+							<div class="beschriftung text2">speichern</div> 
+						    <div class="button-bottom"></div>
+						</div>
+						
+						<div id="right_options" class="">
+							<a id="pdf_button" href="/pdf"><img src="/assets/images/pdf_icon_48x48.png"/></a>
+								
+							<div class="fb-like" data-href="http://localhost:9000" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-font="verdana" data-colorscheme="dark"></div>						</div>
+
+						<div id="feder"> </div>						
+						
+						@pageAll(p)
+						
+						<td id="papier_td_rand">
+							<div id="papier_rechts"></div>
+						</td>
+
+					</tr>
+				</table>
+			</td>
+			<td width="120px"></td>
+		</tr>
+	</table>
+
+<!-- 
+	<div id="rolle_unten">
+		<div id="rolle_unten_background"></div>
+		<table border="0" width="100%" cellspacing=0 cellpadding=0>
+			<tr width="100%">
+				<td>
+					<div id="rolle_unten_links_abstand"></div>
+				</td>
+				<td>
+					<div id="rolle_unten_links"></div>
+				</td>
+				<td width="100%">
+					<div id="rolle_unten_mitte"></div>
+				</td>
+				<td>
+					<div id="rolle_unten_rechts"></div>
+				</td>
+			</tr>
+		</table>
+	</div>
+ -->
+</div>

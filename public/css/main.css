@@ -1,0 +1,680 @@
+/*******************************************************************************************
+
+ Fonts
+
+ *******************************************************************************************/
+
+@font-face {
+	font-family: 'celticeelsregular';
+	src: url('fonts/celticeels-webfont.eot');
+	src: url('fonts/celticeels-webfont.eot?#iefix')
+		format('embedded-opentype'), url('fonts/celticeels-webfont.woff')
+		format('woff'), url('fonts/celticeels-webfont.ttf') format('truetype'),
+		url('fonts/celticeels-webfont.svg#celticeelsregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'frakturn';
+	src: url('fonts/frakturn.eot');
+	src: url('fonts/frakturn.eot?#iefix') format('embedded-opentype'),
+		url('fonts/frakturn.woff') format('woff'), url('fonts/frakturn.ttf')
+		format('truetype'), url('fonts/frakturn.svg#frakturn') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'willowregular';
+	src: url('fonts/willow-webfont.eot');
+	src: url('fonts/willow-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/willow-webfont.woff') format('woff'),
+		url('fonts/willow-webfont.ttf') format('truetype'),
+		url('fonts/willow-webfont.svg#willowregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Earthdawn';
+	src: url('fonts/earthdawn.eot');
+	src: url('fonts/earthdawn.eot?#iefix') format('embedded-opentype'),
+		url('fonts/earthdawn.woff') format('woff'), url('fonts/earthdawn.ttf')
+		format('truetype'), url('fonts/earthdawn.svg#earthdawn') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*******************************************************************************************
+
+ Right Buttons
+
+ *******************************************************************************************/
+
+
+.button {
+	cursor: pointer;
+	width: 90px;
+}
+.button-top {
+	background: url('../images/button_top.png');
+	width: 90px;
+	height: 34px;
+}
+.button-middle {
+	background: url('../images/button_middle.png');
+	width: 90px;
+	height: 110px;
+}
+.button-bottom {
+	background: url('../images/button_bottom.png');
+	width: 90px;
+	height: 38px;
+}
+
+.beschriftung {
+	position: absolute;
+	font-size: 12px;
+	font-weight: bold;
+
+	color: rgba(0, 0, 0, 1.0);
+	text-shadow: 0px 0px 3px rgba(0,0,0,1);
+/*
+	color: rgba(255, 255, 255, 1.0);
+	text-shadow: 0px 0px 3px rgba(0,0,0,1);
+*/
+}
+
+#edit-button {
+	position: fixed;
+	right: 0px;
+	top: 30px;
+	z-index: 20;
+}
+
+#edit-button .button-image {
+	background: url('../images/quill_pen_ink.png');
+	width: 47px;
+	height: 99px;
+	position: absolute;
+	top:25px;
+	left: 20px;
+}
+
+#edit-button.active .button-image {
+	background: url('../images/quill_ink.png');
+}
+
+#feder {
+	background: url('../images/pen_ink.png');
+	width: 61px;
+	height: 80px;
+	position: absolute;
+	z-index: 30;
+	display: none;
+}
+
+
+#edit-button .beschriftung {
+	bottom:30px;
+	left: 15px;
+}
+
+#edit-button .beschriftung.text1 {
+	display: block;
+}
+#edit-button .beschriftung.text2 {
+	display: none;
+}
+#edit-button.active .beschriftung.text2 {
+	display: block;
+}
+#edit-button.active .beschriftung.text1 {
+	display: none;
+}
+
+.button {
+	opacity: 0.8;
+}
+.button:hover {
+	opacity: 1.0;
+}
+.button.active {
+	opacity: 1.0;
+}
+
+#save-button {
+	position: fixed;
+	top: 30px;
+	right: 0px;
+	z-index: 20;
+}
+#save-button .button-image {
+	background: url('../images/up_green_arrow.png');
+	width: 40px;
+	height: 53px;
+	position: absolute;
+	top:55px;
+	left: 20px;
+}
+
+#save-button .beschriftung {
+	bottom:30px;
+	left: 18px;
+}
+
+#right_options {
+	position: fixed;
+	right: 0px;
+	bottom: 20px;
+	z-index: 20;
+	width:80px;
+}
+
+#pdf_button {
+	opacity: 0.4;
+}
+#pdf_button:hover {
+	opacity: 1.0;
+}
+
+.fb-like {
+	opacity: 0.4;
+}
+.fb-like:hover {
+	opacity: 1.0;
+}
+
+/*******************************************************************************************
+
+ Wysiwyg Editor
+
+ *******************************************************************************************/
+
+.aloha-sidebar-bar {
+	display: none !important;
+}
+
+.aloha-editable-highlight {
+	outline: none !important;
+}
+
+.aloha-editable-active,.aloha-editable-active[contenteditable="true"]:focus
+	{
+	outline: none !important;
+}
+
+
+/*******************************************************************************************
+
+  Base HTML
+
+ *******************************************************************************************/
+
+
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	border: none
+}
+
+body {
+	background: url('../images/background.jpg');
+	background-attachment: fixed;
+	font-family: 'Earthdawn'
+}
+
+/*******************************************************************************************
+
+  Menu
+
+ *******************************************************************************************/
+
+#menustein {
+	position: absolute;
+	top: 10px;
+	left: 18px;
+	width: 224px;
+	z-index: 2;
+}
+
+#ed_logo {
+	top: 50px;
+	left: 32px; 
+	width: 144px;
+	height: 89px;
+	background: url('../images/ed-logo.png');
+	z-index: 4;
+}
+
+#menustein_oben { 
+	height: 84px;
+	background: url('../images/menustein_oben.png');
+}
+
+#menustein_mitte {
+	padding-top:1px;
+	padding-bottom:1px;
+	width: 224px;
+	/*height:100%;*/
+/*	bottom: 94px;
+	top: 84px; */
+	background: url('../images/menustein_mitte.png');
+}
+
+#menustein_inhalt {
+	margin-top: -2em;
+	margin-left: 25px;
+	margin-right: 45px;
+	margin-bottom: 30px;
+}
+
+#menustein_inhalt * {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#menustein_unten {
+	width: 224px;
+/*	position: absolute; */
+	height: 94px;
+/*	bottom: 0px; */
+	background: url('../images/menustein_unten.png');
+}
+
+.blood {
+	background: url('../images/blutfleck.png');
+	width: 51px;
+	height: 52px;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0.5;	
+}
+
+#menu {
+	margin: 0px;
+	margin-top: 0.5em;
+	font-family: 'willowregular';
+	text-align: center;
+}
+
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#menu li {
+	list-style: none;
+}
+
+#menu>ul>li {
+	margin-bottom: 5px;
+}
+
+#menu>ul>li {
+	font-size: 22px;
+	text-shadow: 1px 1px 1px #CCC;
+}
+
+#menu>ul>li>ul, #search input {
+	padding: 5px;
+	font-size: 14px;
+	background: rgba(0, 0, 255, 0.05);
+	box-shadow: inset 1px 2px 2px 1px rgba(0, 0, 0, 0.5);
+	border-width: 1px;
+	border-radius: 15px;
+	border: 1px;
+	border-color: rgba(200, 200, 200, 0.5);
+	border-style: inset;
+	text-shadow: none;
+}
+#menu>ul>li>ul>li:hover {
+	/*background: rgba(255, 0, 0, 0.5);*/
+	border-radius: 8px;
+	cursor: pointer;
+	text-shadow: 0 0 10px rgba(255,0,0,1);
+}
+
+#search {
+	position: relative;
+	margin-top: 10px;
+}
+
+#search .search_icon {
+	background: url('../images/icon_magnify_search.png');
+	width: 18px;
+	height:18px;
+	position: absolute;
+	left: 6px;
+	bottom: 10px;
+}
+
+#search input {
+	width:145px;
+	font-family: 'Earthdawn';
+	text-align: center;
+	text-color: black;
+}
+
+#search input:focus {
+	box-shadow: inset 1px 2px 5px 1px rgba(100, 0, 0, 0.7);
+	outline: none;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+#login_button {
+	text-shadow: 1px 1px 1px rgba(220,0,0,1);
+	color: rgba(20,0,0,1);
+	font-size: 16px;
+	cursor: pointer;
+	background: rgba(150, 0, 0, 0.7);
+	border-width: 6px;
+	border-radius: 10px;
+	border-color: rgba(100, 0, 0, 0.9);
+	border-style: outset;
+	margin: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+	opacity: 0.8;
+	box-shadow: 1px 1px 3px 1px rgba(80, 20, 20, 0.7);
+}
+
+#login_button:hover {
+	opacity: 1.0;
+}
+
+#user {
+	margin-top:10px;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'willowregular';
+}
+
+#user .greeting {
+	font-size:70%;	
+}
+
+#user .username {
+	font-weight:bold;	
+}
+
+
+
+/*******************************************************************************************
+
+  Paper Style
+
+ *******************************************************************************************/
+
+#papier {
+	background: url('../images/pergament.jpg');
+}
+
+#papier_td_rand {
+	width: 118px;
+	position: relative;
+	height: 100%;
+}
+
+#papier_links {
+	position: relative;
+	background-image: url('../images/buchrand_links.png');
+	left: -20px;
+	width: 118px;
+	height: 100%;
+	background-repeat: repeat-y;
+}
+
+#papier_rechts {
+	position: relative;
+	background-image: url('../images/buchrand_rechts.png');
+	left: 20px;
+	width: 118px;
+	height: 100%;
+	background-repeat: repeat-y;
+}
+
+#papierbox {
+}
+
+/*******************************************************************************************
+
+  Page Title
+
+ *******************************************************************************************/
+
+#page_title {
+	text-align: center;
+	margin-top: 0.2em;
+}
+
+#page_title .text, #text_edit {
+	font-family: "willowregular";
+	font-weight: normal;
+	font-size: 3em;
+	text-shadow: 0 0 4px rgba(0,0,0,0.4);
+}
+
+#page_title .left_mark,
+#page_title .right_mark {
+	width: 120px;
+	height: 68px;
+	display: inline-block;
+}
+
+#page_title .left_mark {
+	background-image: url('../images/leftTribal.png');
+}
+
+#page_title .right_mark {
+	background-image: url('../images/rightTribal.png');
+}
+
+#page_title .text {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 64px;
+}
+
+#text_edit {
+	display: none;
+	background-color: rgba(0,0,0,0);
+	border: none;
+	outline: none;
+	width:10em;
+	text-align: center;
+	vertical-align: top;
+}
+
+/*******************************************************************************************
+
+  Content Meta
+
+ *******************************************************************************************/
+
+#content_meta {
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+	margin-top: 4em;
+	font-size: 0.8em;
+	border-radius: 2em;
+	background-color: rgba(0,0,0,0.1);
+	padding: 2em;
+	padding-right: 4em;
+	width: 50em;
+}
+
+#content_meta * {
+	font-family: 'Earthdawn';
+}
+
+#content_meta textarea, #content_meta input[type="text"] {
+	width: 100%;
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.5);
+	padding: 0.3em;
+}
+
+#content_meta textarea {
+	height: 5em;
+}
+
+#content_meta label {
+	display: block;
+	font-weight: bold;
+	margin-top: 0.5em;
+}
+
+
+
+#page_markierungen {
+	position: absolute;
+	right:250px;
+	z-index:9;
+	vertical-align: top;
+}
+
+.markieroptionen {
+	display: inline-block;
+	position: relative;
+}
+
+.markierung, .markierung_selected {
+	padding: 0.5em;
+	display: inline-block;
+	text-align: center;
+}
+
+.markierung {
+	width:100%;
+	min-height:80px;
+	min-width:80px;
+}
+
+.markierung:hover {
+	background-color: rgba(250,250,230,0.9);
+	border-radius: 2em;
+}
+
+.markierung_selected {
+	vertical-align:top;
+	min-width:50px;
+	min-height:50px;
+}
+
+#page_markierungen.edit .markierung_selected {
+	border: 2px dashed rgba(0,0,0,0.3);
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 2em;
+	min-width:100px;
+	min-height:50px;
+}
+
+.markierinner {
+	position:absolute;
+	display: none;
+	background-color: rgba(220,220,200,0.7);
+	border-radius: 2em;
+	z-index:10;
+	padding:0px;
+}
+
+.markieroptionen:hover .markierinner {
+	display: block;
+}
+
+
+/*******************************************************************************************
+
+  Page Footer
+
+ *******************************************************************************************/
+#footer-line {
+	background-image: url('../images/tribal-ruler.png');
+	width: 199px;
+	height: 20px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 1em;
+	opacity: 0.2;
+}
+
+#footer {
+	font-family: "Earthdawn";
+	font-weight: normal;
+	font-style: italic;
+	font-size: 0.7em;
+	text-align: center;
+	margin-top: 8em;
+	margin-bottom: 2em;
+	text-shadow: 0 0 1px rgba(0,0,0,0.4);
+	color: rgba(0,0,0,0.7);
+}
+
+/*******************************************************************************************
+
+  Main Content Text Style
+
+ *******************************************************************************************/
+
+p.initial-caps-1:first-letter {
+	float: left;
+	font-size: 94px;
+	font-family: "celticeelsregular";
+	line-height: 88px;
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-left: 3px;
+	text-shadow: 0 0 4px rgba(0,0,0,0.6);
+	
+	/*
+	text-shadow: 0 0 1px rgba(0,0,0,0.4);
+	*/
+}
+
+p.initial-caps-1:first-line {
+	line-height: 100%;
+}
+
+p.initial-caps-2:first-letter {
+	float: left;
+	font-size: 44px;
+	font-family: "frakturn";
+	line-height: 28px;
+	padding-top: 0px;
+	padding-right: 2px;
+	padding-left: 3px;
+	padding-bottom: 0px;
+	text-shadow: 0 0 3px rgba(0,0,0,0.4);
+}
+
+p.initial-caps-2:first-line {
+	line-height: 100%;
+}
+
+h1,h2,h3,h4 {
+	font-family: "willowregular";
+	font-weight: normal;
+	text-align: center;
+	text-shadow: 0 0 4px rgba(0,0,0,0.4);
+}
+
+#content p {
+	text-rendering: optimizeLegibility;
+	text-shadow: 0 0 1px rgba(0,0,0,0.4);
+}
+
+
+/*******************************************************************************************
+
+  Print Media
+
+ *******************************************************************************************/
+
+@media print {
+	
+}

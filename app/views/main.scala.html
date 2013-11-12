@@ -1,0 +1,48 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>@title</title>
+		<link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+		
+		<!-- Load Aloha Editor css and js -->
+		<link rel="stylesheet" href="/assets/javascripts/thirdparty/aloha/css/aloha.css" type="text/css">
+		<script src="/assets/javascripts/thirdparty/aloha/lib/require.js"></script>
+		<script src="/assets/javascripts/thirdparty/aloha/lib/vendor/jquery-1.7.2.js"></script>		
+		<script src="/assets/javascripts/thirdparty/aloha/lib/aloha.js"
+			data-aloha-plugins="common/ui,
+								common/format,
+		                        common/table,
+		                        common/list,
+		                        common/link,
+		                        common/highlighteditables,
+		                        common/block,
+		                        common/image,
+		                        common/undo,
+		                        common/contenthandler,
+		                        common/paste,
+		                        common/commands,
+		                        common/abbr,
+		                        custom/initialcaps"></script>
+		                        
+		<link rel="stylesheet" media="screen" href="@routes.Assets.at("css/main.css")">
+		<script src="/assets/javascripts/main.js"></script>
+	
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		
+		<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>	
+	
+		@content
+		
+	</body>
+</html>

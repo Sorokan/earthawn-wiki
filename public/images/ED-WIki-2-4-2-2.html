@@ -1,0 +1,719 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/xhtml1-strict.dtd">
+<html>
+<!--
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml version="1.0" encoding="ISO-8859-1" ?><! IE 7 quirks mode please >
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" height="100%">
+-->		 
+  <head>
+    <title>
+      Earthdawn Wiki
+    </title>
+
+    <script type="text/javascript" src="blendtrans.js"></script>
+    <script type="text/javascript" src="scroll.js"></script>
+				
+<style type="text/css">
+html,body{
+  margin:0;
+  padding:0;
+  height:100%;
+  border:none
+}
+	
+body { 
+  background:url('background.jpg'); 
+  background-attachment:fixed;
+}
+/*div { border:1px solid #888;  }*/
+
+#menustein
+{
+
+	position:absolute;
+	 
+/*	position:fixed; */
+
+	top:78px;
+	
+	bottom:150px;
+
+	left:18px;
+
+	width:224px; 
+
+	min-height:200px;  
+/*	height:300px; */
+
+	z-index:2;
+
+}
+
+#blutfleck
+{
+
+	position:absolute;
+
+	top:30px;
+	
+	left:80px;
+
+	width:51px; 
+
+	height:52px; 
+
+	background:url('blutfleck.png');
+	
+	z-index:10;
+
+}
+
+#tribal_fleck
+{
+
+	position:absolute;
+
+	top:55px;
+	
+	left:77px;
+
+	width:68px; 
+
+	height:66px; 
+
+	background:url('tribal-fleck.png');
+
+	z-index:20;
+}
+
+#ed_logo
+{
+
+	position:absolute;
+
+	bottom:60px;
+	
+	left:32px;
+
+	width:144px; 
+
+	height:89px; 
+
+	background:url('ed-logo.png');
+
+	z-index:50;
+}
+
+#menustein_oben
+{
+
+/*	width:224px; */
+
+	height:84px;
+
+	background:url('menustein_oben.png');
+
+}
+
+#menustein_mitte
+{
+
+  position: absolute;
+
+	width:224px; 
+	
+	/*height:100%;*/
+
+	bottom:94px;
+
+	top:84px;
+
+	background:url('menustein_mitte.png');
+}
+
+#menustein_unten
+{
+ 	width:224px; 
+
+  position: absolute;
+
+	height:94px;
+	
+	
+	bottom:0px;
+
+	background:url('menustein_unten.png');
+}
+
+*.tabhead 
+{
+text-align:center;
+font-size:1.2em;
+background-color:#E0E0E0;
+}
+
+*.tabbody 
+{
+text-align:center;
+}
+
+
+*.tabhead,*.tabbody a                  {color:#000000;font-family:arial,courier,times;text-decoration:none}
+*.tabbody,*.tabbody a:visited   		   {color:#006600;font-family:arial,courier,times;text-decoration:none}
+*.tabbody,*.tabbody a:hover   			   {color:#990000;font-family:Arial, Courier, Times;text-decoration:none}
+*.tabbody,*.tabbody a:active   			   {color:#000066;font-family:arial, courier, times;text-decoration:none}
+
+
+#rolle_oben
+{
+
+/*	position:fixed !important; */
+
+	position:absolute;
+
+	top:0px;
+
+	left:0px;
+
+	width:100%;
+
+/*	height:10% !important; */
+
+	height:90px;
+
+	z-index:4;
+	
+}
+
+#rolle_oben_background
+{
+	position:absolute;
+
+  background:url('background.jpg'); 
+
+	top:0px;
+
+	width:100%;
+
+	height:30px;
+
+	z-index:-1;
+	
+	margin-left:241px;	
+}
+
+#rolle_oben_links_abstand
+{
+	position:relative;
+
+	width:156px;
+
+}
+
+#rolle_oben_rechts_abstand
+{
+	position:relative;
+
+	width:20px;
+
+}
+
+#rolle_oben_links
+{
+	position:relative;
+
+	width:484px;
+
+	height:90px;
+
+	background:url('rolle_oben_links.png');
+}
+
+#rolle_oben_mitte
+{
+	position:relative;
+
+	left:0;
+
+	top:8px;
+
+	height:70px;
+
+	width:100%;
+	
+	background:url('rolle_oben_mitte.png');
+}
+
+#rolle_oben_rechts
+{
+	position:relative;
+
+	top:4px;
+
+	width:397px;
+
+	height:75px;
+
+	background:url('rolle_oben_rechts.png');
+}
+
+#rolle_unten
+{
+
+/*	position:fixed !important;*/
+
+/*	position:absolute; */
+
+	bottom:166px;
+
+	left:0px;
+
+	width:100%;
+
+/*	height:0% !important;*/
+
+	height:166px;
+
+	z-index:4;
+
+}
+
+#rolle_unten_links_abstand
+{
+	position:relative;
+
+	width:84px;
+
+}
+
+#rolle_unten_links
+{
+	position:relative;
+
+	top:2px;
+
+	width:304px;
+
+	height:162px;
+
+	background:url('rolle_unten_links.png');
+}
+
+#rolle_unten_mitte
+{
+	position:relative;
+
+	left:0;
+
+	top:1px;
+
+	height:166px;
+
+	width:100%;
+	
+	background:url('rolle_unten_mitte.png');
+}
+
+#rolle_unten_rechts
+{
+	position:relative;
+
+	top:3px;
+
+	width:176px;
+
+	height:161px;
+
+	background:url('rolle_unten_rechts.png');
+}
+
+
+#rolle_unten_background
+{
+	position:absolute;
+
+  background:url('background.jpg'); 
+
+	bottom:-166px;
+
+	width:100%;
+
+	height:10px;
+
+	z-index:-1;
+	
+	margin-left:241px;	
+}
+
+#papier
+{
+	background:url('pergament.jpg');
+}
+
+#papier_td_rand {
+  width:118px;
+  position:relative;
+	height:100%;
+}
+
+#papier_links {
+  position:relative;
+  background-image:url('buchrand_links.png');
+  left:-20px;
+  width:118px;
+	height:100%; 
+  background-repeat:repeat-y;
+}
+
+#papier_rechts {
+  position:relative;
+  background-image:url('buchrand_rechts.png');
+	left:20px;
+  width:118px;
+	height:100%; 		   
+  background-repeat:repeat-y;
+}
+
+#papierbox
+{
+}
+
+</style>
+  </head>
+	<!-- document.getElementById('above_background').style.visibility = 'visible';changeOpac(0,'above_background');javascript:currentOpac('above_background', 100, 2000); -->
+  <body onload="init();">
+<!--	<div id="above_background" style="visibility:hidden"> -->
+  	<div id="above_background"> 
+    <div id="menustein"> 
+		  <div id="blutfleck"></div>
+		  <div id="tribal_fleck"></div>
+		  <div id="ed_logo"></div>						
+		  <table border="0" cellspacing=0 cellpadding=0 width="100%" height="100%">
+        <tr>
+				  <td><div id="menustein_oben"></div></td>
+			  </tr>
+        <tr height="100%">
+				  <td height="100%">
+					  <div id="menustein_mitte">
+
+             <!-- Text -->
+
+
+
+
+
+<div class="tabhead"> <a href="#" <a href="#" class="tabhead" onclick="push('Weristonline');">Wer ist online?</a></div>
+
+<div id="Weristonline" class="tabbody">
+
+
+1 Leute online (<a class="external" href="http://www.earthdawn-wiki.de/Arena.jsp?page=arena-chat">chat</a><img class="outlink" src="images/out.png" alt="">)<br>
+<a class="wikipage" href="Wiki.jsp?page=Sebastian">Sebastian</a><br>
+</div>
+<div class="tabhead"> <a href="#" <a href="#" class="tabhead" onclick="push('Welt');">Welt</a></div>
+<div id="Welt" class="tabbody">
+
+<a class="wikipage" href="Wiki.jsp?page=DasRollenspielEarthdawn">Das Rollenspiel Earthdawn</a><br>
+<a class="wikipage" href="Wiki.jsp?page=EarthdawnDiskussion">Earthdawn Diskussion</a><br>
+
+<a class="wikipage" href="Wiki.jsp?page=GeschichteBarsaives">Geschichte Barsaives</a><br>
+<a class="wikipage" href="Wiki.jsp?page=BarsaiveKarte">Karte Barsaives</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Weltkarte">Weltkarte</a><br>
+<a class="wikipage" href="Wiki.jsp?page=ZeittafelBarsaives">Zeittafel</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Travar">Travar</a><br>
+<a class="wikipage" href="Wiki.jsp?page=DieMagie">Magie und Astralraum</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Niederwelten">Niederwelten</a><br>
+<a class="wikipage" href="Wiki.jsp?page=DieArena">Die Arena</a><br>
+</div>
+
+<div class="tabhead"> <a href="#" <a href="#" class="tabhead" onclick="push('BarsaiverLeben');">Barsaiver Leben</a></div>
+<div id="BarsaiverLeben" class="tabbody">
+
+<a class="wikipage" href="Wiki.jsp?page=DieRassenBarsaives">Die Rassen Barsaives</a><br>
+<a class="wikipage" href="Wiki.jsp?page=D%C3%A4monen">D�monen</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Passionen">Passionen</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Drachen">Drachen</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Kreaturen">Kreaturen</a><br>
+<a class="wikipage" href="Wiki.jsp?page=NSCs">NSCs</a><br>
+<a class="wikipage" href="Wiki.jsp?page=DasNeueTkambras">Das neue T�kambras</a><br>
+
+<a class="wikipage" href="Wiki.jsp?page=Artefakte">Artefakte</a><br>
+<a class="wikipage" href="Wiki.jsp?page=WarenUndDienstleistungen">Waren und Dienste</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Organisationen">Organisationen</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Reittiere">Reittiere</a><br>
+</div>
+<div class="tabhead"> <a href="#" <a href="#" class="tabhead" onclick="push('Spieler');">Spieler</a></div>
+<div id="Spieler" class="tabbody">
+
+<a class="wikipage" href="Wiki.jsp?page=Helden">Helden</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Friedhof">Friedhof</a><br>
+
+<a class="wikipage" href="Wiki.jsp?page=Tagebuecher">Tageb�cher</a><br>
+<a class="wikipage" href="Wiki.jsp?page=DisziplinenIndex">Disziplinen</a><br>
+<a class="wikipage" href="Wiki.jsp?page=TalenteIndex">Talente</a><br>
+<a class="wikipage" href="Wiki.jsp?page=FertigkeitenIndex">Fertigkeiten</a><br>
+<a class="wikipage" href="Wiki.jsp?page=ZauberspruecheIndex">Zauberspr�che</a><br>
+<a class="wikipage" href="Wiki.jsp?page=VorteileNachteileIndex">Vorteile Nachteile</a><br> 
+</div>
+<div class="tabhead"> <a href="#" <a href="#" class="tabhead" onclick="push('Mastern');">Mastern</a></div>
+<div id="Mastern" class="tabbody">
+
+<a class="wikipage" href="Wiki.jsp?page=Abenteuer">Abenteuer</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Geb%C3%A4udeUndMaterial">Geb�ude und Material</a><br>
+<a class="wikipage" href="Wiki.jsp?page=SpielleiterTipps">Spielleiter Tipps</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Regelfragen">Regelfragen</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Wertetabellen">Wertetabellen</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Quellenb%C3%BCcher">Quellenb�cher</a><br>
+</div>
+<div class="tabhead"> <a href="#" <a href="#" class="tabhead" onclick="push('Community');">Community</a></div>
+<div id="Community" class="tabbody">
+
+<a class="wikipage" href="Wiki.jsp?page=Mitglieder">Mitglieder</a><br>
+<a class="wikipage" href="Wiki.jsp?page=EdGruppenHerkunftskarte">ED Gruppen</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Galerie">Galerie</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Forum">Forum</a><br>
+<a class="wikipage" href="Wiki.jsp?page=EarthdawnLinks">Earthdawn-Links</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Conventions">Conventions</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Software">Software</a><br>
+<a class="wikipage" href="Wiki.jsp?page=B%C3%B6genSchirmeKladden">B�gen, Schirme, Kladden</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Funstuff">Funstuff</a><br>
+
+<a class="wikipage" href="Wiki.jsp?page=BarsaiverGazette">Barsaiver Gazette</a><br>
+<a class="wikipage" href="Wiki.jsp?page=EarthdawnTermine">Termine &amp; News</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Spr%C3%BCche">Spr�che</a><br>
+<a class="wikipage" href="Wiki.jsp?page=AndereRPGSysteme">Andere RPG-Systeme</a><br>
+</div>
+<div class="tabhead"> <a href="#" <a href="#" class="tabhead" onclick="push('Metawiki');">Metawiki</a></div>
+<div id="Metawiki" class="tabbody">
+
+<a class="wikipage" href="Wiki.jsp?page=Main">Main</a><br>
+
+<a class="wikipage" href="Wiki.jsp?page=UserPreferences">Anmelden</a><br>
+<a class="wikipage" href="Wiki.jsp?page=%C3%9CberUns">�ber uns</a><br>
+<a class="wikipage" href="Wiki.jsp?page=WikiEtiquette">Wiki-Etiquette</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Verbesserungsvorschl%C3%A4ge">Verbesserungsvorschl�ge</a><br>
+<a class="wikipage" href="Wiki.jsp?page=EureMeinung">Eure Meinung</a><br>
+<a class="wikipage" href="Wiki.jsp?page=News">News</a><br>
+<a class="wikipage" href="Wiki.jsp?page=PageIndex">Seiten Index</a><br>
+<a class="wikipage" href="Wiki.jsp?page=TopTenSeiten">Top Ten Seiten</a><br>
+<a class="wikipage" href="Wiki.jsp?page=Todos">Todo</a><br>
+
+<a class="wikipage" href="Wiki.jsp?page=Impressum">Impressum</a><br>
+<a class="wikipage" href="Wiki.jsp?page=FAQ">FAQ</a><br>
+</div>
+<div class="tabhead"> <a href="#" <a href="#" class="tabhead" onclick="push('Backlinks');">Backlinks</a></div>
+<div id="Backlinks" class="tabbody">
+
+<a class="wikipage" href="Wiki.jsp?page=RecentChanges">RecentChanges</a><br>
+<a class="wikipage" href="Wiki.jsp?page=DasErsteBild">Das Erste Bild</a><br><a class="wikipage" href="Wiki.jsp?page=LeftMenu">Left Menu</a><br><a class="wikipage" href="Wiki.jsp?page=SebastianFavorites">Sebastian Favo...</a><br><a class="wikipage" href="Wiki.jsp?page=TextFormattingRules">Text Formattin...</a><br>
+
+					  </div>
+					</td>
+			  </tr>
+        <tr>
+				  <td><div id="menustein_unten"></div></td>
+			  </tr>
+      </table>
+-	  </div>
+    <div id="rolle_oben">
+		  <div id="rolle_oben_background"></div>
+		  <table border="0" width="100%" cellspacing=0 cellpadding=0 >
+        <tr>
+				  <td>
+					  <div id="rolle_oben_links_abstand"></div>
+					</td>
+				  <td>
+					  <div id="rolle_oben_links"></div>
+					</td>
+				  <td width="100%">
+					  <div id="rolle_oben_mitte"></div>
+					</td>
+				  <td>
+					  <div id="rolle_oben_rechts"></div>
+					</td>
+				  <td>
+					  <div id="rolle_oben_rechts_abstand"></div>
+					</td>
+			  </tr>
+      </table>
+	  </div>		
+    <table border="0" width="100%" height="100%" cellspacing=0 cellpadding=0>
+      <tr height="25px">
+  	  </tr>			
+      <tr height="100%">
+        <td width="280px">
+        </td>
+        <td height="100%" valign="top">
+          <table border="0" width="100%" height="100%" cellspacing=0 cellpadding=0 id="papier">
+            <tr height="100%">
+              <td id="papier_td_rand">
+                <div id="papier_links">
+                </div>
+              </td>
+              <td width="100%" height="100%" valign="top">
+                <br/>
+                <br/>
+                <br/>
+
+								
+								
+								
+								
+
+    <div style="text-align:center">
+      <img class="inline" src="earthdawn_wiki_opener.png" alt=
+      "earthdawn_wiki_opener.png" />
+    </div><i><b>Willkommen auf der frei editierbaren Fan-Seite
+    f&uuml;r das <a class="wikipage" href=
+    "Wiki.jsp?page=Fantasy">Fantasy</a>-<a class="wikipage" href=
+    "Wiki.jsp?page=Rollenspiel">Rollenspiel</a> <a class=
+    "wikipage" href=
+    "Wiki.jsp?page=DasRollenspielEarthdawn">Earthdawn</a> mit
+    stolzen 1336 <a class="wikipage" href=
+    "Wiki.jsp?page=PageIndex">Seiten</a>.</b></i><br />
+    <br />
+    <table border="0" class="imageplugin" align="right">
+      <tr>
+        <td>
+          <a href=
+          "Wiki.jsp?page=DasRollenspielEarthdawn"><img src=
+          "wuerfel.png" /></a>
+        </td>
+      </tr>
+    </table><img src=
+    "w.gif"
+    align="left" style="margin-right:0.5em" alt="W" />
+    <p style="text-indent:0em;">
+      ir sind ein <a class="external" href=
+      "http://de.wikipedia.org/wiki/Wiki">Wiki</a> - genau wie das
+      ber&uuml;hmte <a class="external" href=
+      "http://www.wikipedia.org">WikiPedia</a> - und das
+      hei&szlig;t, da&szlig; jeder diese Seiten bearbeiten darf.
+      Wir m&ouml;chten Euch hier eine Plattform bieten, um
+      <a class="wikipage" href=
+      "Wiki.jsp?page=Kreaturen">Monster</a>, <a class="wikipage"
+      href="Wiki.jsp?page=Abenteuer">Abenteuer</a>, <a class=
+      "wikipage" href="Wiki.jsp?page=Helden">Charaktere</a> usw.
+      zu publizieren.
+    </p>
+    <p>
+      <a class="wikipage" href=
+      "Wiki.jsp?page=DasRollenspielEarthdawn">Earthdawn</a> ist
+      unsere Leidenschaft, und wir m&ouml;chten dieses
+      gro&szlig;artige Spiel gerne unterst&uuml;tzen und ein
+      wenig reicher machen. Unser Wunsch ist es, der <a class=
+      "external" href=
+      "http://de.wikipedia.org/wiki/Per_Anhalter_durch_die_Galaxis">
+      Anhalter durch Barsaive</a> zu sein.
+    </p>
+    <table border="0" class="imageplugin" align="left">
+      <tr>
+        <td>
+          <a href="http://www.wikipedia.org"><img src=
+          "wiki.png" /></a>
+        </td>
+      </tr>
+    </table>
+    <p>
+      Ein Wiki lebt von Deiner Mitarbeit. Falls Du Dich noch
+      nicht mit Wikis auskennst, lies die <a class="wikipage"
+      href="Wiki.jsp?page=WikiEtiquette">WikiEtiquette</a> und
+      probiere Deine ersten Schritte in der <a class="wikipage"
+      href="Wiki.jsp?page=Sandbox">Sandbox</a>.
+    </p>
+    <p>
+      <br />
+      <br />
+    </p>
+		
+		
+<a href="javascript:currentOpac('papier', 100, 2000)">fade to 60%</a>		
+<a href="javascript:currentOpac('papier', 0, 300)">fade to 0%</a>		
+		
+    <center>
+      <img src='tribal-ruler.png' />
+    </center>
+    <hr />
+Unser erster Auftrag war beendet, es ging um ein lebendsspendendes Elexier, ein besonderes Wasser aus den Tiefen des Servos. Leider war es Umgeben von den abscheulichsten Kreaturen, jedes wahren Lebens ausgesogene Kadavermenschen, die jede Nacht erneut erwachten. Erst hatten wir die verstreuten Leichen gar nicht beachtet, abgesehen von einem ersten Schrecken. Unz�hlige waren es, ein Dorf, zuviele selbst um sie an einem Tag in den Bach zu werfen. Am Tage lagen sie herum und waren einfach nur damit besch�ftigt, tot zu sein.<br/>
+<br/>
+Aber in der Nacht standen wir an den Toren des Abgrundes, ein D�mon war das Zentrum aller Befleckung. Wir metzelten uns durch die Untoten, nur mit einem Stock wehrte ich mich ihrer, Stinkbomben waren da wohl nicht mehr n�tig gewesen. Meine Kameraden schlugen sich tapfer, ohne sie w�re ich jetzt tot, was mich eindeutig unterfordert h�tte. Und wir schafften das unm�gliche. Wir t�teten das absolute Negative, die Essenz des Grauens und der Schrecken, einem D�mon standen wir gegen�ber, und auch wenn mancher fiel - niemand folgte dem H�llenhund in seine Tiefen, wir alle blieben am Leben, schwer verwundet, aber die Quelle gab uns Kraft.<br/>
+<br/>
+Und unser erstes finanzielles Auskommen. Unser Auftraggeber wollte erste Gesch�ftsbeziehungen wegen der Nutzung der Quelle schlie�en und schickte uns so nach Darranis mit einem Fa� Quellwasser. Als ich am ersten Morgen zu meinen Kameraden zum Fr�hst�ck kam, sa� dort dieser Type, ein kr�ftiger blonder Elf im Schie�ershirt, Marke Alpham�nnchen. Und er machte allen Kaffee. Doch hatte er diesen Blutfleck auf dem Hemd, es schien nicht von ihm zu sein. War cool und relaxed, und wie mir unsere Elfe verriet, war er Schwertmeister und von noch h�herer Erstdiziplin dazu. Unser Troubadour schien ihn nicht zu m�gen, im Gegensatz zu den meisten anderen.<br/>
+<br/>
+Die Nacht wahr sehr ruhig gewesen, und die kleine Elfe war noch nicht so weit. Ein gutes Glas Wodka und eine Havanna halfen mir �ber meine Lage hinweg, so sa� ich also da in meinem miefigen Hotelzimmer und putzte meine Waffen. Man konnte nie wissen. Manchmal flog so eine auf Dich ab, und peng! Direkt am ersten Abend erwischst Du sie. Manchmal l��t man sie aber auch ein wenig zappeln. Oder sie einen selbst... und genau das unterscheidet einen echten Profi von einem Amateur. <br/><br/>
+<br/>
+Ich hatte mich vor kurzem als Amateur erwiesen.<br/>
+<br/>
+Eine Truppe Frischlinge kampierte in der Herberge. Ein Zergkrieger, ein Dieb, noch ein freakiges Weichei, die Kleine und ein Alchemist, den man von weitem roch. Er war wohl in eine russische Chemiepf�tze gefallen, stellte sich aber als Scholar vor.<br/>
+<br/>
+Tja, am Abend hatte ich diesen Besucher. Sollte mir sch�ne Gr��e von Clystein ausrichten und wollte mich umbringen. Vom B�rgermeister von M�rkteburg h�tte ich mehr erwartet. Ein gew�hnlicher Stra�enr�uber f�r 50 Goldm�nzen.... ich verstand die Botschaft. Wo sollte ich mit der Leiche hin? Morgen fr�h w�rden wohl die Wachen kommen.<br/>
+<br/>
+Es gibt verschiedene Wege, sich einer Leiche zu entledigen. Die spektakul�rste ist, sie von einem Drachen fressen zu lassen. Was eine Meisterleistung ist, an der schon mancher gescheitert ist. Schnapp! Und Du bist weg. Sie m�gen es, Dich so al dente zu schmoren, da� der Kern noch sch�n lebendig ist. Man kann so was am besten hinbekommen, wenn man einen gr��enwahnsinnigen Konkurrenten aus dem eigenen Gewerbe ausschalten will. So wie damals der alte Jack... hielt sich f�r die Nummer eins. War gut im Gesch�ft gewesen und hatte einen ordentlichen Coup hingelegt, der ihm eine Menge Zaster einbrachte, viel mehr, als f�r einen einzelnen Mann gesund sein k�nnte. Ich erz�hlte ihm von dieser Drachennummer und nahm mir auf derselben Party seine Frau vor. Er schmiedete einen Plan, suchte nach einem Drachen - und fand einen. Amateur.<br/>
+<br/>
+Aber f�r gew�hnlich reicht ein Sumpf, ein Friedhof, oder einfach nur Misthaufen. Nur im Zentrum von M�rkteburg ist es nicht wirklich einfach. Auf den Stra�en war noch immer ziemlich viel los.<br/>
+<br/>
+Schlie�lich gab es da noch das Hackbrett. Eine Schweinearbeit. Jeder, der schon einmal in einem Schweineschlachthof war, wei�, was ich meine. Litterweise Blut. Man braucht also eine Kanalisation und eine Badewanne. Leider war das Zimmer nicht so gut ausgestattet. Das Zerlegen ist nicht einfach, wenn man noch Pl�ne mit dem Fleisch hat, aber in der Regel mu� man nur die Knochen kleins�gen und alles andere gleich mit. Hat man einen Schweinestall, ist der Abend gerettet.<br/>
+<br/>
+Ich hatte nichts �brig f�r unn�tige K�chenarbeit, und wozu gibt es denn Frauen? Also probierte ich es noch mal bei der kleinen Elfe. So ganz abgeneigt zu sein schien sie j a nicht, mein Arsch war ihr wohl aufgefallen. Ein paar Glas billigen Wein - ein paar ehrliche Komplimente - und schon k�nnte sich ein langweiliger Abend von einem Problem in eine L�sung verwandeln, in eine L�sung mit Titten und Sex, was mein pers�nlicher Weg ist. Und am n�chsten Morgen liegt unter dem Bett, in dem sie schl�ft, eine Leiche.<br/>
+<br/>
+Irgendwie hatte ich mich wohl nicht genug angestrengt, jedenfalls blieb ich in der Nacht alleine, abgesehen von meinem Zimmergenossen, der seinen ewigen Schlaf schon gefunden hatte.<br/>
+<br/>
+Der Schlaf wollte nicht leicht kommen, hatte ich doch immer noch diese Gef�hl, beobachtet zu sein. Tja, in meiner Branche. Vanessa kam mir wieder in den Sinn. Nicht diese kleine Elfe da nebenan, sondern Vanessa Clystein. Ihr hatte ich das alles schlie�lich zu verdanken. Erste Regel, verliebe Dich nie. Schon gar nicht in die Frau von einem hohen Tier. Schon gar nicht von Clystein.<br/>
+<br/>
+Aber so kam halt eines zum anderen. Dinge finden sich, und in diesem Fall hat sie gesucht. Sie suchte N�he. Schutz. Ein Mann. Mich. Eine Traumfrau, selbst f�r einen Menschen hatte sie dieses etwas, ihre primitive Menschlichkeit zog mich irgendwie an...Sie erz�hlte mir von ihrem Mann und von all dem Quatsch, der Ehe zu so einer leeren L�ge macht. <br/>
+<br/>
+Wo sie jetzt wohl gerade steckte? <br/>
+<br/>
+Egal.<br/>
+<br/>
+Ich w�rde sie finden.
+		
+		
+		
+		
+		
+
+    <div id="rolle_unten">
+		  <div id="rolle_unten_background"></div>
+		  <table border="0" width="100%" cellspacing=0 cellpadding=0 >
+        <tr width="100%">
+				  <td>
+					  <div id="rolle_unten_links_abstand"></div>
+					</td>
+				  <td>
+					  <div id="rolle_unten_links"></div>
+					</td>
+				  <td width="100%">
+					  <div id="rolle_unten_mitte"></div>
+					</td>
+				  <td>
+					  <div id="rolle_unten_rechts"></div>
+					</td>
+			  </tr>
+      </table>
+	  </div>	
+
+              </td>							
+              <td id="papier_td_rand">
+                <div id="papier_rechts">
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td width="80px">
+        </td>					
+      </tr>
+    </table>
+ 	 </div>
+  </body>	
+</html>

@@ -1,0 +1,11 @@
+{
+	"css":[
+		"css/initialcaps.css"
+	],
+	"img":[
+		"img/icon.png"
+	],
+	"js":[
+		"lib/initialcaps-plugin.js"
+	]
+}
